@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39ECC8CC1B749FD900A3326A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECC8CB1B749FD900A3326A /* main.m */; };
+		39ECC8CF1B749FD900A3326A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECC8CE1B749FD900A3326A /* AppDelegate.m */; };
+		39ECC8D21B749FD900A3326A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECC8D11B749FD900A3326A /* ViewController.m */; };
+		39ECC8D71B749FD900A3326A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39ECC8D61B749FD900A3326A /* Images.xcassets */; };
+		39ECC8E61B749FD900A3326A /* MultitouchEventDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECC8E51B749FD900A3326A /* MultitouchEventDemoTests.m */; };
+		39ECC8F11B74A04B00A3326A /* KCTouchEvenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECC8F01B74A04B00A3326A /* KCTouchEvenViewController.m */; };
+		39ECC8F31B74A08500A3326A /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 39ECC8F21B74A08500A3326A /* 1.jpg */; };
+		39ECC8F61B74A0CB00A3326A /* KCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECC8F51B74A0CB00A3326A /* KCImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39ECC8E01B749FD900A3326A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39ECC8BE1B749FD800A3326A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39ECC8C51B749FD800A3326A;
+			remoteInfo = MultitouchEventDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39ECC8C61B749FD900A3326A /* MultitouchEventDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultitouchEventDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39ECC8CA1B749FD900A3326A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39ECC8CB1B749FD900A3326A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		39ECC8CD1B749FD900A3326A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		39ECC8CE1B749FD900A3326A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		39ECC8D01B749FD900A3326A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		39ECC8D11B749FD900A3326A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		39ECC8D61B749FD900A3326A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		39ECC8DF1B749FD900A3326A /* MultitouchEventDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultitouchEventDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39ECC8E41B749FD900A3326A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39ECC8E51B749FD900A3326A /* MultitouchEventDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultitouchEventDemoTests.m; sourceTree = "<group>"; };
+		39ECC8EF1B74A04B00A3326A /* KCTouchEvenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCTouchEvenViewController.h; sourceTree = "<group>"; };
+		39ECC8F01B74A04B00A3326A /* KCTouchEvenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCTouchEvenViewController.m; sourceTree = "<group>"; };
+		39ECC8F21B74A08500A3326A /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		39ECC8F41B74A0CB00A3326A /* KCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCImage.h; sourceTree = "<group>"; };
+		39ECC8F51B74A0CB00A3326A /* KCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCImage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39ECC8C31B749FD800A3326A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39ECC8DC1B749FD900A3326A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		39ECC8BD1B749FD800A3326A = {
+			isa = PBXGroup;
+			children = (
+				39ECC8C81B749FD900A3326A /* MultitouchEventDemo */,
+				39ECC8E21B749FD900A3326A /* MultitouchEventDemoTests */,
+				39ECC8C71B749FD900A3326A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39ECC8C71B749FD900A3326A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39ECC8C61B749FD900A3326A /* MultitouchEventDemo.app */,
+				39ECC8DF1B749FD900A3326A /* MultitouchEventDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39ECC8C81B749FD900A3326A /* MultitouchEventDemo */ = {
+			isa = PBXGroup;
+			children = (
+				39ECC8F21B74A08500A3326A /* 1.jpg */,
+				39ECC8CD1B749FD900A3326A /* AppDelegate.h */,
+				39ECC8CE1B749FD900A3326A /* AppDelegate.m */,
+				39ECC8D01B749FD900A3326A /* ViewController.h */,
+				39ECC8D11B749FD900A3326A /* ViewController.m */,
+				39ECC8D61B749FD900A3326A /* Images.xcassets */,
+				39ECC8C91B749FD900A3326A /* Supporting Files */,
+				39ECC8EF1B74A04B00A3326A /* KCTouchEvenViewController.h */,
+				39ECC8F01B74A04B00A3326A /* KCTouchEvenViewController.m */,
+				39ECC8F41B74A0CB00A3326A /* KCImage.h */,
+				39ECC8F51B74A0CB00A3326A /* KCImage.m */,
+			);
+			path = MultitouchEventDemo;
+			sourceTree = "<group>";
+		};
+		39ECC8C91B749FD900A3326A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39ECC8CA1B749FD900A3326A /* Info.plist */,
+				39ECC8CB1B749FD900A3326A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		39ECC8E21B749FD900A3326A /* MultitouchEventDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				39ECC8E51B749FD900A3326A /* MultitouchEventDemoTests.m */,
+				39ECC8E31B749FD900A3326A /* Supporting Files */,
+			);
+			path = MultitouchEventDemoTests;
+			sourceTree = "<group>";
+		};
+		39ECC8E31B749FD900A3326A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				39ECC8E41B749FD900A3326A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39ECC8C51B749FD800A3326A /* MultitouchEventDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39ECC8E91B749FD900A3326A /* Build configuration list for PBXNativeTarget "MultitouchEventDemo" */;
+			buildPhases = (
+				39ECC8C21B749FD800A3326A /* Sources */,
+				39ECC8C31B749FD800A3326A /* Frameworks */,
+				39ECC8C41B749FD800A3326A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultitouchEventDemo;
+			productName = MultitouchEventDemo;
+			productReference = 39ECC8C61B749FD900A3326A /* MultitouchEventDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39ECC8DE1B749FD900A3326A /* MultitouchEventDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39ECC8EC1B749FD900A3326A /* Build configuration list for PBXNativeTarget "MultitouchEventDemoTests" */;
+			buildPhases = (
+				39ECC8DB1B749FD900A3326A /* Sources */,
+				39ECC8DC1B749FD900A3326A /* Frameworks */,
+				39ECC8DD1B749FD900A3326A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39ECC8E11B749FD900A3326A /* PBXTargetDependency */,
+			);
+			name = MultitouchEventDemoTests;
+			productName = MultitouchEventDemoTests;
+			productReference = 39ECC8DF1B749FD900A3326A /* MultitouchEventDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39ECC8BE1B749FD800A3326A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = TTS;
+				TargetAttributes = {
+					39ECC8C51B749FD800A3326A = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					39ECC8DE1B749FD900A3326A = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 39ECC8C51B749FD800A3326A;
+					};
+				};
+			};
+			buildConfigurationList = 39ECC8C11B749FD800A3326A /* Build configuration list for PBXProject "MultitouchEventDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39ECC8BD1B749FD800A3326A;
+			productRefGroup = 39ECC8C71B749FD900A3326A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39ECC8C51B749FD800A3326A /* MultitouchEventDemo */,
+				39ECC8DE1B749FD900A3326A /* MultitouchEventDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39ECC8C41B749FD800A3326A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39ECC8D71B749FD900A3326A /* Images.xcassets in Resources */,
+				39ECC8F31B74A08500A3326A /* 1.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39ECC8DD1B749FD900A3326A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39ECC8C21B749FD800A3326A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39ECC8F11B74A04B00A3326A /* KCTouchEvenViewController.m in Sources */,
+				39ECC8D21B749FD900A3326A /* ViewController.m in Sources */,
+				39ECC8CF1B749FD900A3326A /* AppDelegate.m in Sources */,
+				39ECC8CC1B749FD900A3326A /* main.m in Sources */,
+				39ECC8F61B74A0CB00A3326A /* KCImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39ECC8DB1B749FD900A3326A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39ECC8E61B749FD900A3326A /* MultitouchEventDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39ECC8E11B749FD900A3326A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39ECC8C51B749FD800A3326A /* MultitouchEventDemo */;
+			targetProxy = 39ECC8E01B749FD900A3326A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		39ECC8E71B749FD900A3326A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39ECC8E81B749FD900A3326A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39ECC8EA1B749FD900A3326A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MultitouchEventDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		39ECC8EB1B749FD900A3326A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MultitouchEventDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		39ECC8ED1B749FD900A3326A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MultitouchEventDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultitouchEventDemo.app/MultitouchEventDemo";
+			};
+			name = Debug;
+		};
+		39ECC8EE1B749FD900A3326A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MultitouchEventDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultitouchEventDemo.app/MultitouchEventDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39ECC8C11B749FD800A3326A /* Build configuration list for PBXProject "MultitouchEventDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39ECC8E71B749FD900A3326A /* Debug */,
+				39ECC8E81B749FD900A3326A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39ECC8E91B749FD900A3326A /* Build configuration list for PBXNativeTarget "MultitouchEventDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39ECC8EA1B749FD900A3326A /* Debug */,
+				39ECC8EB1B749FD900A3326A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39ECC8EC1B749FD900A3326A /* Build configuration list for PBXNativeTarget "MultitouchEventDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39ECC8ED1B749FD900A3326A /* Debug */,
+				39ECC8EE1B749FD900A3326A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39ECC8BE1B749FD800A3326A /* Project object */;
+}
