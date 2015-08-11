@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KCImage : UIImageView
+@interface KCImage : UIView
 @end

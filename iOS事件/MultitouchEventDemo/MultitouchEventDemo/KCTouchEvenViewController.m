@@ -25,7 +25,6 @@
     [self.view addSubview:_image];
     
     
-    
 }
 #pragma mark 视图控制器的触摸事件
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
