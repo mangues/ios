@@ -10,7 +10,7 @@
 #import "MGStatus.h"
 #import "MGUser.h"
 #import "MGStatusTableViewCell.h"
-#define kURL @"http://192.168.1.208/ViewStatus.aspx"
+#define kURL @"http://ios-simulation-9d63b.coding.io/index.html"
 @interface MGMainViewController ()<UITableViewDataSource,UITableViewDelegate>{
     UITableView *_tableView;
     NSMutableArray *_status;
@@ -48,7 +48,22 @@
     [self.view addSubview:_tableView];
 }
 
-
+//
+//{
+//    "statuses": [{
+//        "Id": "1",
+//        "profileImageUrl": "http://www.feizl.com/upload2007/2014_08/14082617231748.jpg",
+//        "mbtype": "http://img4.imgtn.bdimg.com/it/u=535226650,2197306098&fm=21&gp=0.jpg",
+//        "source": "iPhone 6",
+//        "createdAt": "9:00 ",
+//        "text": "当然，对于上面文件下载这种大数据响应的情况使用代理方法处理响应具有一定的优势（可以获得传输进度）。但是如果现响应数据不是文件而是一段字符串(注意web请求的数据可以是字符串或者二进制，上面文件下载示例中响应数据是二进制)",
+//        "user": {
+//            "Id": "1",
+//            "name": "xutao",
+//            "city": "北京"
+//        }
+//    }]
+//}
 #pragma mark 加载数据
 -(void)loadData:(NSData *)data{
     _status=[[NSMutableArray alloc]init];
@@ -61,26 +76,30 @@
      error:错误信息
      */
     NSError *error;
-    //将对象序列化为字典
-    NSDictionary *dic= [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-    NSArray *array= (NSArray *)dic[@"statuses"];
+    NSDictionary *dic =[NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+    NSArray *array = (NSArray *)dic[@"statuses"];
     [array enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        MGStatus *status=[[MGStatus alloc]init];
-        //通过KVC给对象赋值
+        MGStatus *status = [[MGStatus alloc]init];
+        //通过KVC给对象赋值，只能赋值一层，不能深层次遍历，赋值
         [status setValuesForKeysWithDictionary:obj];
+        
         
         MGUser *user=[[MGUser alloc]init];
         [user setValuesForKeysWithDictionary:obj[@"user"]];
         status.user=user;
+        
+        
         
         [_status addObject:status];
         
         //存储tableViewCell
         MGStatusTableViewCell *cell=[[MGStatusTableViewCell alloc]init];
         [_statusCells addObject:cell];
-        
     }];
-}
+    
+    
+
+    }
 
 #pragma mark 发送数据请求
 -(void)sendRequest{
@@ -93,11 +112,11 @@
     
     /*创建可变请求*/
     NSMutableURLRequest *requestM=[[NSMutableURLRequest alloc]initWithURL:url cachePolicy:0 timeoutInterval:5.0f];
-    [requestM setHTTPMethod:@"POST"];//设置位post请求
+    [requestM setHTTPMethod:@"GET"];//设置位post请求
     //创建post参数
-    NSString *bodyDataStr=[NSString stringWithFormat:@"userName=%@&password=%@",_userName,_password];
-    NSData *bodyData=[bodyDataStr dataUsingEncoding:NSUTF8StringEncoding];
-    [requestM setHTTPBody:bodyData];
+  //  NSString *bodyDataStr=[NSString stringWithFormat:@"userName=%@&password=%@",_userName,_password];
+  ///  NSData *bodyData=[bodyDataStr dataUsingEncoding:NSUTF8StringEncoding];
+   // [requestM setHTTPBody:bodyData];
     
     //发送一个异步请求
     [NSURLConnection sendAsynchronousRequest:requestM queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
