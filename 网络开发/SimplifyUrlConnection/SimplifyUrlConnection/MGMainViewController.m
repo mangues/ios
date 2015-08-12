@@ -28,6 +28,9 @@
    
     _userName=@"KenshinCui";
     _password=@"123";
+    //在子视图中（或者根视图）有一个navigationItem用于访问其导航信息
+    self.navigationItem.title=@"朋友圈";//或者直接设置控制器title（例如[self setTitle:@"Friends"]）
+   
     
     [self layoutUI];
     
@@ -38,6 +41,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 #pragma mark - 私有方法
 #pragma mark 界面布局

@@ -9,6 +9,7 @@
 #import "MGStatusTableViewCell.h"
 #import "MGStatus.h"
 #import "String2Image.h"
+#import "UIImageView+WebCache.h"
 #define KCColor(r,g,b) [UIColor colorWithHue:r/255.0 saturation:g/255.0 brightness:b/255.0 alpha:1] //颜色宏定义
 #define kStatusTableViewCellControlSpacing 10 //控件间距
 #define kStatusTableViewCellBackgroundColor KCColor(251,251,251)
@@ -79,11 +80,19 @@
     //设置头像大小和位置
     CGFloat avatarX=10,avatarY=10;
     CGRect avatarRect=CGRectMake(avatarX, avatarY, kStatusTableViewCellAvatarWidth, kStatusTableViewCellAvatarHeight);
+    /****方法一*******/
 //    //_avatar.image=[UIImage imageNamed:status.profileImageUrl];
 //    NSURL *avatarUrl = [NSURL URLWithString:status.profileImageUrl];
 //    NSData *avatarData = [NSData dataWithContentsOfURL:avatarUrl];
 //    UIImage *avatarImage = [UIImage imageWithData:avatarData];
+    
+    /******方法二**********/
     _avatar.image=[String2Image returnImage:status.profileImageUrl]; //利用静态方法替换掉
+    
+    /****方法三**********/
+      NSURL *avatarUrl = [NSURL URLWithString:status.profileImageUrl];
+      UIImage *defaultAvatar=[UIImage imageNamed:@"4"];//默认头像
+     [_avatar sd_setImageWithURL:avatarUrl placeholderImage:defaultAvatar];
     _avatar.frame=avatarRect;
     
     
@@ -105,8 +114,13 @@
 //    NSData *mbTypeData=[NSData dataWithContentsOfURL:mbTypeUrl];
 //    UIImage *mbTypeImage= [UIImage imageWithData:mbTypeData];
    
-    _mbType.image= [String2Image returnImage:status.mbtype]; //利用静态方法替换掉
-    _mbType.frame=mbTypeRect;
+//    _mbType.image= [String2Image returnImage:status.mbtype]; //利用静态方法替换掉
+//    _mbType.frame=mbTypeRect;
+    
+     NSURL *mbTypeUrl=[NSURL URLWithString:status.mbtype];
+     UIImage *defaultAvatar1=[UIImage imageNamed:@"4"];//默认头像
+    [_mbType sd_setImageWithURL:mbTypeUrl placeholderImage:defaultAvatar1];
+    _mbType.frame=avatarRect;
     
     
     //设置发布日期大小和位置
