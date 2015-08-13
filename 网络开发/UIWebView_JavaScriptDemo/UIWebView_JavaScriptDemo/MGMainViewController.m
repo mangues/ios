@@ -44,7 +44,7 @@
     <head><title>Kenshin Cui's Blog</title></head>\
     <body style=\"color:#0092FF;\">\
     <h1 id=\"header\">I am Kenshin Cui</h1>\
-    <p>iOS 开发系列</p>\
+    <p id=\"blog\">iOS 开发系列</p>\
     </body></html>";
     
     [_webView loadHTMLString:htmlStr baseURL:nil];  //baseURL 资源文件所在的文件
