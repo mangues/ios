@@ -20,4 +20,5 @@
 @property (nonatomic, retain) NSString * screenName;
 @property (nonatomic, retain) Status *status;
 
+-(void)setUser:(User *)user;
 @end

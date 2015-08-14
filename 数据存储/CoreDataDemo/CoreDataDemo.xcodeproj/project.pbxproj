@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39DB9D6E1B7D8151001D914C /* ObtainData.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB9D6D1B7D8151001D914C /* ObtainData.m */; };
+		39DB9D721B7D8266001D914C /* MGstatusService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB9D711B7D8266001D914C /* MGstatusService.m */; };
+		39DB9D751B7D82D1001D914C /* MGUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB9D741B7D82D1001D914C /* MGUserService.m */; };
+		39DB9D791B7D8C23001D914C /* MGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB9D781B7D8C23001D914C /* MGMainViewController.m */; };
+		39DB9D7D1B7D8C48001D914C /* KCStatusTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DB9D7C1B7D8C48001D914C /* KCStatusTableViewCell.m */; };
 		39F5E3671B7CB6B8005C13AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5E3661B7CB6B8005C13AB /* main.m */; };
 		39F5E36A1B7CB6B8005C13AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5E3691B7CB6B8005C13AB /* AppDelegate.m */; };
 		39F5E36D1B7CB6B8005C13AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F5E36C1B7CB6B8005C13AB /* ViewController.m */; };
@@ -29,6 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39DB9D6A1B7D74EE001D914C /* KCSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KCSingleton.h; path = "../../../../../Downloads/10 DataAccess/CoreData/CoreData/KCSingleton.h"; sourceTree = "<group>"; };
+		39DB9D6C1B7D812E001D914C /* ObtainData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObtainData.h; sourceTree = "<group>"; };
+		39DB9D6D1B7D8151001D914C /* ObtainData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObtainData.m; sourceTree = "<group>"; };
+		39DB9D701B7D8266001D914C /* MGstatusService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGstatusService.h; sourceTree = "<group>"; };
+		39DB9D711B7D8266001D914C /* MGstatusService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGstatusService.m; sourceTree = "<group>"; };
+		39DB9D731B7D82D1001D914C /* MGUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGUserService.h; sourceTree = "<group>"; };
+		39DB9D741B7D82D1001D914C /* MGUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGUserService.m; sourceTree = "<group>"; };
+		39DB9D771B7D8C23001D914C /* MGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGMainViewController.h; sourceTree = "<group>"; };
+		39DB9D781B7D8C23001D914C /* MGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGMainViewController.m; sourceTree = "<group>"; };
+		39DB9D7B1B7D8C42001D914C /* KCStatusTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCStatusTableViewCell.h; sourceTree = "<group>"; };
+		39DB9D7C1B7D8C48001D914C /* KCStatusTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCStatusTableViewCell.m; sourceTree = "<group>"; };
 		39F5E3611B7CB6B8005C13AB /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F5E3651B7CB6B8005C13AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39F5E3661B7CB6B8005C13AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,6 +83,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39DB9D6B1B7D811B001D914C /* net */ = {
+			isa = PBXGroup;
+			children = (
+				39DB9D6C1B7D812E001D914C /* ObtainData.h */,
+				39DB9D6D1B7D8151001D914C /* ObtainData.m */,
+			);
+			name = net;
+			sourceTree = "<group>";
+		};
+		39DB9D6F1B7D821E001D914C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				39DB9D701B7D8266001D914C /* MGstatusService.h */,
+				39DB9D711B7D8266001D914C /* MGstatusService.m */,
+				39DB9D731B7D82D1001D914C /* MGUserService.h */,
+				39DB9D741B7D82D1001D914C /* MGUserService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		39DB9D761B7D8BFE001D914C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39DB9D771B7D8C23001D914C /* MGMainViewController.h */,
+				39DB9D781B7D8C23001D914C /* MGMainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		39DB9D7A1B7D8C2C001D914C /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				39DB9D7C1B7D8C48001D914C /* KCStatusTableViewCell.m */,
+				39DB9D7B1B7D8C42001D914C /* KCStatusTableViewCell.h */,
+			);
+			name = VIew;
+			sourceTree = "<group>";
+		};
 		39F5E3581B7CB6B8005C13AB = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +142,10 @@
 		39F5E3631B7CB6B8005C13AB /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				39DB9D7A1B7D8C2C001D914C /* VIew */,
+				39DB9D761B7D8BFE001D914C /* Controller */,
+				39DB9D6F1B7D821E001D914C /* Service */,
+				39DB9D6B1B7D811B001D914C /* net */,
 				39F5E39F1B7CBF36005C13AB /* Common */,
 				39F5E3951B7CBEEA005C13AB /* model */,
 				39F5E3681B7CB6B8005C13AB /* AppDelegate.h */,
@@ -142,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				39F5E3A01B7CBF4E005C13AB /* MGDbManager.h */,
+				39DB9D6A1B7D74EE001D914C /* KCSingleton.h */,
 				39F5E3A11B7CBF4E005C13AB /* MGDbManager.m */,
 			);
 			name = Common;
@@ -248,10 +307,15 @@
 				39F5E36D1B7CB6B8005C13AB /* ViewController.m in Sources */,
 				39F5E36A1B7CB6B8005C13AB /* AppDelegate.m in Sources */,
 				39F5E3A21B7CBF4E005C13AB /* MGDbManager.m in Sources */,
+				39DB9D7D1B7D8C48001D914C /* KCStatusTableViewCell.m in Sources */,
 				39F5E39E1B7CBF19005C13AB /* User.m in Sources */,
 				39F5E3671B7CB6B8005C13AB /* main.m in Sources */,
 				39F5E39B1B7CBF18005C13AB /* Status.m in Sources */,
+				39DB9D751B7D82D1001D914C /* MGUserService.m in Sources */,
+				39DB9D6E1B7D8151001D914C /* ObtainData.m in Sources */,
 				39F5E38E1B7CB719005C13AB /* Model.xcdatamodeld in Sources */,
+				39DB9D721B7D8266001D914C /* MGstatusService.m in Sources */,
+				39DB9D791B7D8C23001D914C /* MGMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +493,7 @@
 				39F5E3861B7CB6B8005C13AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39F5E3871B7CB6B8005C13AB /* Build configuration list for PBXNativeTarget "CoreDataDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +502,7 @@
 				39F5E3891B7CB6B8005C13AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

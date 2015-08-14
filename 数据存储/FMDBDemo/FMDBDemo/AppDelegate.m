@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  CoreDataDemo
+//  FMDBDemo
 //
-//  Created by TTS on 15/8/13.
+//  Created by TTS on 15/8/14.
 //  Copyright (c) 2015年 TTS. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MGMainViewController.h"
+#import "KCMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _window.backgroundColor = [UIColor whiteColor];
-    _window.rootViewController = [[MGMainViewController alloc] init];
+    _window.rootViewController =[[KCMainViewController alloc] init];
     [_window makeKeyAndVisible];
     return YES;
 }

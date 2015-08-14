@@ -18,5 +18,11 @@
 @dynamic profileImageUrl;
 @dynamic screenName;
 @dynamic status;
-
+-(void)setUser:(User *)user{
+    self.name=user.name;
+    self.screenName=user.screenName;
+    self.profileImageUrl=user.profileImageUrl;
+    self.mbtype=user.mbtype;
+    self.city=user.city;
+}
 @end
