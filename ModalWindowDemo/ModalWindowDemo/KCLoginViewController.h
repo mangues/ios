@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#pragma mark 定义一个协议用于参数传递
+@protocol KCMainDelegate
+-(void)showUserInfoWithUserName:(NSString *)userName;
+@end
 
-@protocol KCMainDelegate;
 @interface KCLoginViewController : UIViewController
 #pragma mark 定义代理
 @property (nonatomic,strong) id<KCMainDelegate> delegate;

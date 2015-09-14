@@ -12,8 +12,7 @@
 @implementation MGDatabaseCreator
 +(void)initDatabase{
     NSString *key = @"IsCreateBase";   //标记表是否创建，不能一直创建表
-    NSUserDefaults *userDefault = [[NSUserDefaults alloc]init];
-    if ([[userDefault valueForKey:key] intValue]!=1) {
+    NSUserDefaults *userDefault = [[NSUserDefaults alloc]init]; if ([[userDefault valueForKey:key] intValue]!=1) {
         [self createUsertable];
         [self createStatustable];
         [userDefault setValue:@1 forKey:key];
